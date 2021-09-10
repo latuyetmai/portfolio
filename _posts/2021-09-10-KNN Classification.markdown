@@ -97,6 +97,8 @@ def show_images(num_examples=10, X=train_data, y=train_labels):
 show_images(10
 ```
 ![Digits]("portfolio/blob/master/others/knn_01_images.png")
+
+<img src="{{ site.baseurl }}/others/knn_01_images.png">
   
 ---
 Under construction
