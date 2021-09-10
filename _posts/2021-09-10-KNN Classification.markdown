@@ -103,17 +103,21 @@ show_images(10
 ## Evaluating different choices of k
 
 * I'm going to produce k-Nearest Neighbors models with different values, i.e., k = 1, 3, 5, 7, 9. And will evaluate the accuracy of each model.
+
 * Notes:
   - Train the data on mini training set
   - Evaluate performance on the devlopment set
- * Results:
+ 
+* Results:
   - k = 1 giving the best performance with higest accuracy
   - The classification report for k=1 show that number 8 is the most difficult for the 1-Nearest Neighbor model to classify correctly as it has the lowest recall comparing to other numbers. It also has lowest F1 score
- * Notes: 
- - Definition of Precision, Recall and F1 score is as following
- $$Precision = \frac{True~Positive}{True~Positive + False~Positive}$$
- $$Recall = \frac{True~Positive}{True~Positive + False~Positive}$$
- $$F1-score = \frac{2 * (Precision * Recall)}{Precision + Recall}&&
+ 
+* Notes: 
+  - Definition of Precision, Recall and F1 score is as following
+ 
+    $$Precision = \frac{True Positive}{True Positive + False~Positive}$$
+    $$Recall = \frac{True Positive}{True Positive + False Positive}$$
+    $$F1-score = \frac{2 * (Precision * Recall)}{Precision + Recall}$$
   
 ---
 Under construction
