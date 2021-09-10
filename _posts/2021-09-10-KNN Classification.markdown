@@ -102,22 +102,62 @@ show_images(10
 
 ## Evaluating different choices of k
 
-* I'm going to produce k-Nearest Neighbors models with different values, i.e., k = 1, 3, 5, 7, 9. And will evaluate the accuracy of each model.
-
-* Notes:
+* I'm going to produce k-Nearest Neighbors models with different values, (i.e., k = 1, 3, 5, 7, 9) and will evaluate the accuracy of each model. We will use the following:
   - Train the data on mini training set
   - Evaluate performance on the devlopment set
  
 * Results:
   - k = 1 giving the best performance with higest accuracy
-  - The classification report for k=1 show that number 8 is the most difficult for the 1-Nearest Neighbor model to classify correctly as it has the lowest recall comparing to other numbers. It also has lowest F1 score
+  - The classification report for k=1 show that number 8 is the most difficult for the 1-Nearest Neighbor model to classify correctly as it has the lowest recall comparing to other numbers. It also has the lowest F1 score
  
-* Notes: 
-  - Definition of Precision, Recall and F1 score is as following
- 
-    $$Precision = \frac{True Positive}{True Positive + False~Positive}$$
-    $$Recall = \frac{True Positive}{True Positive + False Positive}$$
-    $$F1-score = \frac{2 * (Precision * Recall)}{Precision + Recall}$$
+* Notes: Definition of Precision, Recall and F1 score is as following
+  - Precision = True Positive/ (True Positive + False Positive)
+  - Recall = True Positive/ (True Positive + False Positive)
+  - F1-score = 2*(Precision * Recall) / (Precision + Recall)
+
+```Python
+def k_value_evaluation(k_values=1, X_train=mini_train_data, y_train=mini_train_labels,
+       X_test=dev_data, y_test=dev_labels):
+  """This function take in a list of k_values, and return the accuracy of each
+  k_Nearest Neighbors models with k in the list. If 1 is in the k_values list, 
+  it will also print out the classification report for k=1 KNN model 
+  """
+  # Convert y from text to numeric
+  y_train = y_train.astype(int)
+  y_test = y_test.astype(int)
+
+  # Training and Prediction with different k value
+  for k_value in list(k_values):
+    # Train model
+    knn = KNeighborsClassifier(n_neighbors=k_value, p=2, metric='minkowski')
+    knn.fit(X_train, y_train)
+
+    # Predict
+    y_pred = knn.predict(X_test)
+
+    # Performance evaluation
+    accuracy = knn.score(X_test, y_test)
+    if k_value == 1:
+      class_report_k1 = classification_report(y_test, y_pred)
+
+    # Print out accuracy results  
+    if k_value == k_values[0]:
+      print("\n Accuracy of each KNN model:\n")
+      print("| K Value | Prediction Accuracy |")
+    print(f"| {k_value:>7} | {accuracy:>19.3f} |")
+
+  # Print out the classification report for k = 1
+  print("\n\n Classification report for k=1:\n\n", class_report_k1)
+    
+  ### STUDENT END ###
+
+k_values = [1, 3, 5, 7, 9]
+k_value_evaluation(k_values)
+```
+
+* Output:
+![](https://github.com/latuyetmai/portfolio/blob/master/others/knn_02_k-values.png)
+<img src="{{ site.baseurl }}/others/knn_02_k-values.png">
   
 ---
 Under construction
