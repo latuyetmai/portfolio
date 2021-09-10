@@ -99,6 +99,8 @@ show_images(10
 ![Digits](./img/knn_01_images.png)
 
 <img src="{{ site.baseurl }}/others/knn_01_images.png">
+
+![Examples](https://github.com/latuyetmai/portfolio/blob/master/others/knn_01_images.png)
   
 ---
 Under construction
