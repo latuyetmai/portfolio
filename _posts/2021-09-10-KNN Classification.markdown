@@ -40,7 +40,7 @@ np.random.seed(0)
 
 * Then import our dataset from openml. We are going to split our data set into training set, mini training set, development set and test sets for fine tuning the hyperparameters, in this blog, it's the k value.
 
-```Python
+```py
 # Load the digit data from https://www.openml.org/d/554 or from default local location '~/scikit_learn_data/...'
 X, Y = fetch_openml(name='mnist_784', return_X_y=True, cache=False)
 
@@ -69,7 +69,7 @@ mini_train_data, mini_train_labels = X[:1000], Y[:1000]
 
 * Let's visualize some of the images from our data set. In particular, let's show a 10 x 10 grid that visualizes 10 examples for each digit. We will use matplotlib `imshow()` for this task. We will also need to reshape our X data from a 1D vector feature to 2D matrix for rendering and able to show the images.
 
-```Python
+```python
 def show_images(num_examples=10, X=train_data, y=train_labels):
   """ Plot 10 examples of each digit in a 10x10 grid from the training set"""
 
@@ -115,7 +115,7 @@ show_images(10
   - Recall = True Positive/ (True Positive + False Positive)
   - F1-score = 2*(Precision * Recall) / (Precision + Recall)
 
-```Python
+```python
 def k_value_evaluation(k_values=1, X_train=mini_train_data, y_train=mini_train_labels,
        X_test=dev_data, y_test=dev_labels):
   """This function take in a list of k_values, and return the accuracy of each
@@ -158,6 +158,14 @@ k_value_evaluation(k_values)
 * Output:
 ![](https://github.com/latuyetmai/portfolio/blob/master/others/knn_02_k-values.png)
 <img src="{{ site.baseurl }}/others/knn_02_k-values.png">
+  
+```js
+// Javascript code with syntax highlighting.
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+``` 
   
 ---
 Under construction
