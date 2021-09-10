@@ -97,6 +97,9 @@ def show_images(num_examples=10, X=train_data, y=train_labels):
 show_images(10
 ```
 ![show_images](./img/knn_01_images.png)
-  
+
+<div>
+<img  alt="Digits Example" src="/_posts/img/knn_01_images.png">
+</div>  
 ---
 Under construction
