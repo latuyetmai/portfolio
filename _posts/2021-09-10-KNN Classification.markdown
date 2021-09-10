@@ -96,7 +96,7 @@ def show_images(num_examples=10, X=train_data, y=train_labels):
 ## Show 10 images for each digit, you could choose to show 15, 20, etc.
 show_images(10
 ```
-![show_images](https://github.com/latuyetmai/portfolio/blob/master/_posts/img/knn_01_images.png)
+![Digits](https://github.com/latuyetmai/portfolio/_posts/img/knn_01_images.png)
   
 ---
 Under construction
