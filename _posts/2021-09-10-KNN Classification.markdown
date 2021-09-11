@@ -7,7 +7,7 @@ Machine Learning topic: Implement an image recognition system for classifying di
 
 ## Data
 
-In this blog, I'm going to use the images from the openml `mnist_784`data library. The data set contains 70,000 images of hand-writing digits which ranged from 0 to 9. 
+In this post, I'm going to use the images from the openml `mnist_784`data library. The data set contains 70,000 images of hand-writing digits which ranged from 0 to 9. 
 
 Our main tasks include:
 * Building a KNN model and fine tuned the hyperparameter - k value
@@ -16,7 +16,7 @@ Our main tasks include:
 
 ## Data Exploratory
 
-* Let's start with importing the libraries for our mini project
+* Let's start with importing the libraries for our mini project.
 
 ```py
 # Importlibraries.
@@ -38,7 +38,7 @@ np.random.seed(0)
 %matplotlib inline
 ```
 
-* Then import our dataset from openml. We are going to split our data set into training set, mini training set, development set and test sets for fine tuning the hyperparameters, in this blog, it's the k value.
+* Then import our dataset from `openml`. We are going to split our data set into training set, mini training set, development set and test sets for fine tuning hyperparameters, in this post, it's the k value.
 
 ```py
 # Load the digit data from https://www.openml.org/d/554 or from default local location '~/scikit_learn_data/...'
@@ -170,9 +170,9 @@ k_value_evaluation(k_values)
   - Evaluate on the development set
   - Use `time.time()` to measure elapsed time of operations 
 * Results:
-  - The accuracy of the models increase as the traing size increase
-  - However, the evaluating time also increases with O(N) as the training size grows
-  - As expected, the evaluating time is much longer than training time. This is because KNN is a lazy learning algorithm. In the training 
+  - The accuracy of the models increase as the traing size increases.
+  - However, the evaluating time also increases with running time of O(N) as the training size grows.
+  - As expected, the evaluating time is much longer than training time. This is because KNN is a lazy learning algorithm. 
   - In a real world situation, when we have extensive amount of data, we will need to decide which trade off should we take. Do we want to have the best accuracy model but it will require extensive computer resources? Or are we good with a relatively correct model (i.e. with accuracy ~90 - 95%), but it's running faster and less constrained on the resources required? 
   
   ```py
@@ -441,7 +441,7 @@ k_value_evaluation(k_values)
 
 ## Summary
 
-We have accomplished the following tasks in this blog:
+We have accomplished the following tasks in this post:
 * How to use KNN for images classification.
 * How to fine tune the k-number hyperparameter for our model
 * Finding what should be the decent training size to use and answer the question should we obtain more data for our model.
