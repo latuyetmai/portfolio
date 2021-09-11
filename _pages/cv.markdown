@@ -85,8 +85,7 @@ description: Mai La's Resume
 	</ul>
 	
 	<h2>SCHLUMBERGER</h2>
-	<p><strong>Technical and Sales Support Engineer, Vietnam, 12/2010-04/2011</strong></p>
-	<p><strong>Field Engineer, Vietnam, 12/2010-04/2011</strong></p>
+	<p><strong>Field Engineer | Technical and Sales Support Engineer, Vietnam, 05/2008-04/2011</strong></p>
 	<ul>
 	<li>Engineer in charge, supervisor for offshore rig operations. Provided engineering and sales support</li>
 	</ul>
