@@ -3,7 +3,7 @@ layout: single
 #title:  "Blog"
 permalink: /blog/
 author_profile: true
-comments: true
+comments: false
 description: My collection of projects and machine learning topics
 ---
 
