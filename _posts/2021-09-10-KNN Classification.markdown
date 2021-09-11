@@ -24,7 +24,6 @@ import time
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from matplotlib.ticker import MultipleLocator
 from sklearn.datasets import fetch_openml
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import confusion_matrix
@@ -71,16 +70,16 @@ mini_train_data, mini_train_labels = X[:1000], Y[:1000]
 
 ```py
 def show_images(num_examples=10, X=train_data, y=train_labels):
-  """ Plot 10 examples of each digit in a 10x10 grid from the training set"""
+  """ Plot n number of examples of each digit from the training set"""
 
-  # Find the index number for the first 10 examples of each digit
+  # Find the index number for the first n numbers of each digit
   idx = []
   for i in range(10):
       idx.append([index for index, label in enumerate(y) \
                   if int(label) == i][:num_examples])
   idx = [idx[i][j] for i in range(10) for j in range(num_examples)]
 
-  # Plot the examples, each digit is in a row
+  # Plot the examples, each digit is shown in a row
   plt.figure(figsize=(10,10))
   plt.suptitle("Example of Training Images", fontsize=16)
   for i in range(10*num_examples):
@@ -93,11 +92,10 @@ def show_images(num_examples=10, X=train_data, y=train_labels):
       plt.ylabel(f"{y[idx][i]:<8}", rotation=0, fontsize=14)
   plt.show()
   
-## Show 10 images for each digit, you could choose to show 15, 20, etc.
+## Show 10 images for each digit, you could show 15, 20, etc. images using the show_images function.
 show_images(10)
 ```
 ![](./img/knn_01_images.png)
-
 <img src="{{ site.baseurl }}/others/knn_01_images.png">
 
 ## Evaluating different choices of k
@@ -107,21 +105,21 @@ show_images(10)
   - Evaluate performance on the devlopment set
  
 * Results:
-  - k = 1 giving the best performance with higest accuracy
-  - The classification report for k=1 show that number 8 is the most difficult for the 1-Nearest Neighbor model to classify correctly as it has the lowest recall comparing to the other numbers. It also has the lowest F1 score
+  - k = 1 gives the best performance with the higest accuracy.
+  - The classification report for k=1 shows that number 8 is the most difficult for the 1-Nearest Neighbor model to classify correctly as it has the lowest recall comparing to the other numbers. It also has the lowest F1 score
  
 * Reviews: Definitions for Precision, Recall and F1 score
   - Precision = True Positive/ (True Positive + False Positive)
-  - Recall = True Positive/ (True Positive + False Positive)
+  - Recall = True Positive/ (True Positive + False Negative)
   - F1-score = 2*(Precision * Recall) / (Precision + Recall)
+  - The higher F1-score, the more precise your model is.
 
 ```py
 def k_value_evaluation(k_values=1, X_train=mini_train_data, y_train=mini_train_labels,
        X_test=dev_data, y_test=dev_labels):
-  """This function take in a list of k_values, and return the accuracy of each
-  k_Nearest Neighbors models with k in the list. If 1 is in the k_values list, 
-  it will also print out the classification report for k=1 KNN model 
-  """
+  """This function take in a list of k_values, and return the accuracy for each
+  k_Nearest Neighbors models in the list."""
+  
   # Convert y from text to numeric
   y_train = y_train.astype(int)
   y_test = y_test.astype(int)
@@ -161,7 +159,7 @@ k_value_evaluation(k_values)
   
 ## Examing the importance of training size and excecution time
 
-* In this section, I will evaluate the effect of training size on the 1-Nearest Neighbor models' accuracy and excecution time.
+* In this section, we will evaluate the effect of training size on the 1-Nearest Neighbor models' accuracy and excecution time.
 * The time is classified into:
   - Time for training for each model
   - Time for measuring accuracy for each model
@@ -170,10 +168,10 @@ k_value_evaluation(k_values)
   - Evaluate on the development set
   - Use `time.time()` to measure elapsed time of operations 
 * Results:
-  - The accuracy of the models increase as the traing size increases.
+  - The accuracy of the models increases as the traing size increases.
   - However, the evaluating time also increases with running time of O(N) as the training size grows.
   - As expected, the evaluating time is much longer than training time. This is because KNN is a lazy learning algorithm. 
-  - In a real world situation, when we have extensive amount of data, we will need to decide which trade off should we take. Do we want to have the best accuracy model but it will require extensive computer resources? Or are we good with a relatively correct model (i.e. with accuracy ~90 - 95%), but it's running faster and less constrained on the resources required? 
+  - In a real world situation, when we have extensive amount of data, we will need to decide which trade off should we take. Do we want to have the best accuracy model but it will require extensive computer resources and efforts in collecting more data? Or are we good with a relatively correct model (i.e. with accuracy ~90 - 95%), but it's running faster and less constrained on the resources and investment required? 
   
   ```py
   def time_evaluation(train_sizes, accuracies, train_times, eval_times, 
@@ -226,7 +224,6 @@ k_value_evaluation(k_values)
     plt.legend(loc="upper left")
     plt.show()
 
-
     ### Training Size and Running Time Evaluation ###
 
   train_sizes = [100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600]
@@ -234,6 +231,7 @@ k_value_evaluation(k_values)
   train_times = []
   eval_times = []
   time_evaluation(train_sizes, accuracies, train_times, eval_times)
+  
   ```
 
 * Output:
@@ -244,21 +242,22 @@ k_value_evaluation(k_values)
 
 * In this section, we will use linear regression to predict what happens to the 1-Nearest Neighbor model's accuracy as we increase the training size.
 
-* Four models will be ran with different transformations to our X and Y data, in order to find the linear regression model that could best predict the 1-KNN accuracies. I will only show the results of the first and the last model:
-  - The first model is the base, where no transformation will be applied to X & Y
-  - In the last model, I will transform X to log10 and Y to probability using logit and logistic function
+* Four models will be ran with different transformations to our X and Y data, in order to find the linear regression model that could best predict the 1-KNN model's accuracies. I will only show the results of the first and the last model:
+  - The first model is the base, where no transformation will be applied to X & Y.
+  - In the last model, I will transform both the X to log10 and the Y to probability using logit and logistic function
 
 * Notes:
-  - We will print the 1-KNN accuracies predicted values for the training set sizes 60000, 120000 and 1000000.
+  - We will print out the 1-KNN accuracies predicted values for the training set sizes 60000, 120000 and 1000000.
   - Transformations applied to the output variables (1-KNN accuracies) using logit and logistic function:
-    * [logistic](https://en.wikipedia.org/wiki/Logistic_function): $\frac{1}{1 + e^{-x}} = \frac{e^x}{1+e^x}$ which takes numbers in $\[\infty,-\infty\]$ and outputs numbers in $(0, 1)$.
+    * [logistic](https://en.wikipedia.org/wiki/Logistic_function): $\frac{1}{1+e^{-x}} = \frac{e^x}{1+e^x}$ which takes numbers in $\[\infty,-\infty\]$ and outputs numbers in $(0, 1)$.
     * [logit](https://en.wikipedia.org/wiki/Logit): $log(\frac{p}{1 - p})$ which takes numbers between $(0, 1)$ and outputs numbers between $\[\infty,-\infty\]$.
-    * It also happens that $x = logit(p)$ is the same thing as $logiistic(x)=p$.
+    * It also happens that $x = logit(p)$ is the same thing as $logistic(x)=p$.
     * R2-score will be manually calculated instead of using `.score()` method from sklearn
 
 * Result:
-  - After transformation both X and Y values, our regression model shows significant improvement in the predition of 1-KNN accuracies with R2-score increases from 0.418 to 0.99.
-  - The last model shows that by increasing our training size to 60000, 120000 or 1000000, the accuracies gained are just slightly improve and we do not gain as much benefits by doing this. In my opinion, the training size at 12,000 records should be good enough for 1-KNN predicting at accuracy ~95%, and we should not obtain more data in this case. 
+  - After transformation both X and Y values, our regression model shows significant improvement in the predition of 1-KNN's accuracies with R2-score increases from 0.418 to 0.99.
+  - Model 1 is the least accurate and model 4 is the best linear regression model to predict 1-KNN's accuracies.
+  - The last model shows that by increasing our training size to 60000, 120000 or 1000000, the accuracies gained are just slightly improved and we do not gain as much benefits by doing this. In my opinion, the training size at 20,000 records should be good enough for 1-KNN predicting at accuracy ~96% -97%, and we should not obtain more data in this case. 
   
   ```py
   def evaluate_train_size(X_train=train_sizes, y_train=accuracies, 
@@ -368,7 +367,7 @@ k_value_evaluation(k_values)
 * In the section, we will display the confusion matrix for the 1-Nearest model and find out which digit does the model most often confuse with another digit.
 * We will show the examples of the misclassified digit
 * Notes:
-  - We will using mini train set and evaluate performance on the development set
+  - We will use the mini train set and evaluate performance on the development set
 * Results:
   - From the confusion matrix, we could conclude that number 4 has the highest misclassified result with number 9 by using the 1-KNN model
  
