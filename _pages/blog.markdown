@@ -7,7 +7,9 @@ comments: false
 description: My collection of projects and machine learning topics
 ---
 
-I'm gathering some topics that I've found useful on Machine Learning. Hope that you find them interesting too.
+Machine learning is a rapidly growing field at the intersection of computer science and statistics and concerned with finding patterns in data. It is responsible for tremendous advances in technology, from personalized product recommendations to speech recognition in smart devices. 
+
+The emphasis on this blog will be on intuition and practical examples of different Machine Learning algorithms and techniques.
 
 <ul>
   {% for post in site.posts %}
