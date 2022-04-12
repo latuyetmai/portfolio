@@ -14,9 +14,7 @@ bluevioletff69b49cf-->
 
 Hello!
 
-My name is Mai La and welcome to my Data Science portfolio. To access the full project git hub folders, please navigate [here](https://github.com/latuyetmai/mla-folio/tree/projects).
-
-Most projects were originated from the courses that I took from the Master of Information and Data Science degree (MIDS) at the University of Califorina, Berkeley. Therefore, the `projects` branch has been hidden to prevent future students from using search engines and copying.
+My name is Mai La and welcome to my Data Science portfolio. Most projects were originated from the courses that I took from the Master of Information and Data Science degree (MIDS) at the University of Califorina, Berkeley. To access the full project git hub folders, please navigate [here](https://github.com/latuyetmai/mla-folio/tree/projects).
 
 <br>
 
