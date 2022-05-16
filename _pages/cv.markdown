@@ -44,6 +44,7 @@ description: Mai La's Resume
 
 		
 	<h1>Professional Experience</h1>
+  <br>
 	<h2>NOV</h2>
   <p><strong>Senior Data Engineer, Houston, TX, 01/2022-Present</strong></p>
 	<ul>
