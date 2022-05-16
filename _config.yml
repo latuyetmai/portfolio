@@ -105,7 +105,7 @@ analytics:
 author:
   name             : "Mai La"
   avatar           : "/others/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Science & Analytics Professional"
+  bio              : "Data Science & Engineering Professional"
   location         : "Houston, TX"
   email            : "mai.la@berkeley.edu"
   github           : "latuyetmai" 
