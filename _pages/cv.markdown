@@ -25,11 +25,12 @@ description: Mai La's Resume
 	<h1>Competencies</h1>
 	<dl class="dl-horizontal">
 	<dt>Data Science Tools</dt>
-	<dd>Python, R, MATLAB, SQL, Git, Bash, Docker, Spark, Kafka, Hadoop, Flask, Google Cloud</dd>
+	<dd>Python, R, MATLAB, SQL, Scikit-Learn, PyTorch, Tensorflow, Git, Bash, Docker, Kubernetes, Spark, Hadoop, Kafka, Flask</dd>
+  <dd>AWS, Azure, GCP, Terraform, Power BI, Tableau, Periscope</dd>
 	</dl>
 	<dl class="dl-horizontal">
 	<dt>Data Science Skills</dt>
-	<dd>Statistics, Data Wrangling, Machine Learning, Data Analysis, Data Visualization, Data Engineering</dd>
+	<dd>Machine Learning, Deep Learning, Data Engineering, Statistics, Data Wrangling, Data Analytics, Data Visualization, Computer Vision, Natural Language Processing</dd>
 	</dl>
 	<dl class="dl-horizontal">
 	<dt>Management</dt>
@@ -44,6 +45,21 @@ description: Mai La's Resume
 		
 	<h1>Professional Experience</h1>
 	<h2>NOV</h2>
+  <p><strong>Senior Data Engineer, Houston, TX, 01/2022-Present</strong></p>
+	<ul>
+	<li>Build data pipelines, pioneer in Extract-Transform-Load (ETL) data with Azure platforms for ReedHycalog Software team.</li>
+  <li>Creator of Phosphor analytics apps and dashboards used for gaining business insights and product design analytics of Drill Bit product.</li> 
+	</ul>
+	<br>
+    
+  <h2>Captain.tv</h2>
+  <p><strong>Data Analyst, Remote, CA, 11/2021-02/2022</strong></p>
+	<ul>
+	<li>Created CEO and Sales dashboards, implemented new metrics for analyzing player rentention, business growth and Games product sales.</li>
+	</ul>
+	<br>
+   
+  <h2>NOV</h2>  
 	<p><strong>Engineering Project Manager – Rotary Steerable, Houston, TX, 05/2019-04/2021</strong></p>
 	<ul>
 	<li>Managed all Engineering projects from new product development (NPD), product enhancement to sustaining engineering for NOV Rotary Steerable Systems (RSS), which are the most advanced autonomous systems used for directional drilling in the Oil & Gas industry. </li>
@@ -81,7 +97,7 @@ description: Mai La's Resume
 
 	<p><strong>Drilling Solution Engineer, Vietnam, 05/2011-07/2012</strong></p>
 	<ul>
-	<li>Directed drilling data analysis, optimization and equipment design selection.</li>
+	<li>Directed time-series drilling data analysis, optimization and equipment design selection.</li>
 	</ul>
 	
 	<h2>SCHLUMBERGER</h2>
