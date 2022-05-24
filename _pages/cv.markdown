@@ -25,7 +25,7 @@ description: Mai La's Resume
 	<h1>Competencies</h1>
   <dl class="dl-horizontal">
 	<dt>Data Science Skills</dt>
-	<dd>Machine Learning, Deep Learning, Data Engineering, Statistics, Data Wrangling, Data Analytics, Data Visualization, Computer Vision, Natural Language Processing</dd>
+	<dd>Machine Learning, Deep Learning, Data Engineering, Statistics, Data Wrangling, Data Analytics, Data Visualization, Distributed Computing, Computer Vision, Natural Language Processing</dd>
 	</dl>
 	<dl class="dl-horizontal">
 	<dt>Data Science Tools</dt>
@@ -47,24 +47,22 @@ description: Mai La's Resume
 	<h2>NOV</h2>
   <p><strong>Senior Data Engineer, Houston, TX, 01/2022-Present</strong></p>
 	<ul>
-	<li>Build data pipelines, pioneer in Extract-Transform-Load (ETL) data with Azure platforms for ReedHycalog Software team.</li>
-  <li>Creator of Phosphor analytics apps and dashboards used for gaining business insights and product design analytics of Drill Bit product.</li> 
+	<li>Build data pipelines, data warehouse, pioneer in Extract-Transform-Load (ETL) data with Azure platforms for ReedHycalog Software team.</li>
+  <li>Creator of Phosphor analytics apps and dashboards used for gaining business insights and product design analytics.</li> 
 	</ul>
     
   <h2>Captain.tv</h2>
   <p><strong>Data Analyst, Remote, CA, 11/2021-02/2022</strong></p>
 	<ul>
-	<li>Created CEO and Sales dashboards, implemented new metrics for analyzing player rentention, business growth and Games product sales.</li>
+	<li>Created CEO and Sales dashboards, implemented new metrics for analyzing player rentention, business growth and games product sales.</li>
 	</ul>
    
   <h2>NOV</h2>  
 	<p><strong>Engineering Project Manager – Rotary Steerable, Houston, TX, 05/2019-04/2021</strong></p>
 	<ul>
 	<li>Managed all Engineering projects from new product development (NPD), product enhancement to sustaining engineering for NOV Rotary Steerable Systems (RSS), which are the most advanced autonomous systems used for directional drilling in the Oil & Gas industry. </li>
-	<li>Defined project charters, scope of work, budgeting and follow up with design engineers from mechanical to software development to ensure critical milestones and project deliveries are achieved on time and within budget. </li>
 	<li>Led engineering data analysis using MATLAB & Python to process high-frequency time-based data from various sensors and equipment for performance evaluation, fine-tuned algorithm, and continuous design improvement.</li>
-	<li>As Principal Test Engineer for RSS Engineering: entrusted to design and lead integrated tests that involve high capital investment (USD 200 - 300K operating cost per test), running multi-million assets at the NOV R&D Technology Center.</li>
-	<li>Provided Subject Matter Expert (SME) support and training to cross-functional teams, create comprehensive integrating manuals, operating procedures and technical notes for the new product’s designs and features.</li>
+	<li>Principal Test Engineer for RSS Engineering: entrusted to design and lead integrated tests that involve high capital investment (USD 200 - 300K operating cost per test), running multi-million assets at the NOV R&D Technology Center.</li>
 	</ul>
 	<br>
 				
@@ -73,11 +71,6 @@ description: Mai La's Resume
 	<li>Managed all commercial and under-development Rotary Steerable Systems (RSS) throughout their complete life cycle</li>
 	<li>Led the top confidential RSS development projects (with more than USD 30 MM in capital investment), and the innovative VectorZIEL & VectorEXAKT RSS acquired from Smart Drilling.</li>
 	<li>Led cross-functional teams with more than 20 core members to develop, field test, commercialize and integrate RSS projects across different countries and regions.</li>
-	<li>Served as SME for RSS: provided specialist support and corporated with all functional groups to enable product success.</li>
-	<li>Conducted market study and financial analysis, constructed business plan, launch plan, managed scopes & budgets.</li>
-	<li>Represented the company at trade shows, created marketing contents, collaterals and propose multimedia ideas.</li>
-	<li>Create technical manuals, sales documents, and training programs for global product users.</li>
-	<li>Oversaw global multi-million assets and inventories through effectively use and integrate NOV ERP system. Created spare-part application to help regions and customers manage their RSS inventories.</li>
 	</ul>
 	<br>
 
@@ -86,10 +79,6 @@ description: Mai La's Resume
 	<li>Managed all business functions at both operational as well as strategic level to develop sales and rental services across the entire NOV Downhole product lines (Drill Bit, Drilling Tools, Drilling Optimization).</li>
 	<li>Accountable for the location revenue and P&L to ensure annual revenue of >$4M with >30% operating profit was achieved and exceeded while successfully manage other technical, operations and personnel challenges.</li>
 	<li>Led all commercial and contract activities from tendering, negotiating of terms and conditions, contract execution and delivery, to dispute resolutions, problem solving and close out.</li>
-	<li>Provided training and career development programs to Drilling and Sales Engineers for the region and Southeast Asia area. </li>
-	<li>Built a strong capable team and rapport between team members through leadership and teamwork.</li>
-	<li>Monitored financial data reviews and analysis including budgeting, forecasting, P&L, market share & sales reports.</li>
-	<li>Fostered a loyal network of clientele, excelled in business development. Entered new customers and won 90% market share.</li>
 	</ul>
 	<br>
 
