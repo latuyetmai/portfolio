@@ -54,7 +54,7 @@ description: Mai La's Resume
   <h2>Captain.tv</h2>
   <p><strong>Data Analyst, Remote, CA, 11/2021-02/2022</strong></p>
 	<ul>
-	<li>Created CEO and Sales dashboards, implemented new metrics for analyzing player rentention, business growth and games product sales.</li>
+	<li>Created CEO and Sales dashboards, implemented new metrics for analyzing player retention, business growth and games product sales.</li>
 	</ul>
    
   <h2>NOV</h2>  
