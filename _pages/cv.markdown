@@ -8,7 +8,7 @@ description: Mai La's Resume
 ---
 <div class="cv">
 	<h1>About</h1>
-	<p>Mai has over a decade with proven leadership and accomplishments in engineering data analytics and product management with the global leader companies in Oil & Gas Drilling industry.<br>
+	<p>Mai has over a decade with proven leadership and accomplishments in data engineering, data science, analytics and product management with the global leader companies in Oil & Gas Drilling industry.<br>
 	She has led multiple projects and cross-functional teams through high quality deliveries of cross regional projects both in the United State and International.<br>
 	Mai has a passion for deriving impactful solutions and insights from data. She is currently pursuing a master's degree in data science at UC Berkeley and eager to apply her data science and analytical skills to solve complex business problems.</p>
 				
@@ -17,7 +17,7 @@ description: Mai La's Resume
 	<p><strong>University of California, Berkeley</strong></p>
 	<li>Master of Science, Information and Data Science <abbr title="Masters of Information & Data Science">(MIDS)</abbr></li>
 	<li>GPA: 4.0</li>
-	<li>Teaching Assistant for <a href="https://mids-w203.github.io/syllabus/">Statistics for Data Science (W203)</a>
+  <li>Teaching Assistant for <a href="https://ischoolonline.berkeley.edu/data-science/curriculum/machine-learning-at-scale/">Machine Learning at Scale (W261)</a> and <a href="https://mids-w203.github.io/syllabus/">Statistics for Data Science (W203)</a></li>
 	<br>
 	<br>
 	
@@ -48,7 +48,8 @@ description: Mai La's Resume
   <p><strong>Senior Data Engineer, Houston, TX, 01/2022-Present</strong></p>
 	<ul>
 	<li>Build data pipelines, data warehouse, pioneer in Extract-Transform-Load (ETL) data with Azure platforms for ReedHycalog Software team.</li>
-  <li>Creator of Phosphor analytics apps and dashboards used for gaining business insights and product design analytics.</li> 
+  <li>Creator of Phosphor analytics apps and dashboards used for gaining business insights and product design analytics.</li>
+  <li>Build and deploy machine learning, computer vision and statistical models for design evaluation, simulation and prediction.</li>
 	</ul>
     
   <h2>Captain.tv</h2>
