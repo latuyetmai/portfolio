@@ -45,7 +45,7 @@ description: Mai La's Resume
 		
 	<h1>Professional Experience</h1>
 	<h2>NOV</h2>
-  <p><strong>Senior Data Engineer, Houston, TX, 01/2022-Present</strong></p>
+  <p><strong>Senior Data Engineer, Remote, Houston, TX, 01/2022-Present</strong></p>
 	<ul>
 	<li>Build data pipelines, data warehouse, pioneer in Extract-Transform-Load (ETL) data with Azure platforms for ReedHycalog Software team.</li>
   <li>Creator of Phosphor analytics apps and dashboards used for gaining business insights and product design analytics.</li>
@@ -53,7 +53,7 @@ description: Mai La's Resume
 	</ul>
     
   <h2>Captain.tv</h2>
-  <p><strong>Data Analyst, Remote, CA, 11/2021-02/2022</strong></p>
+  <p><strong>Data Analyst, Remote, San Francisco, CA, 11/2021-02/2022</strong></p>
 	<ul>
 	<li>Created CEO and Sales dashboards, implemented new metrics for analyzing player retention, business growth and games product sales.</li>
 	</ul>
