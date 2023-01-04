@@ -36,20 +36,22 @@ description: Mai La's Resume
 	<dt>Management</dt>
 	<dd>Project management - JIRA, Zephyr, MS Project. MS Office, Access & Visio. MRP/ERP Oracles’ JD Edwards</dd>
 	</dl>
-	<dl class="dl-horizontal">
-	<dt>Engineering</dt>
-	<dd>SolidWorks, AutoCAD, Team Center PLM</dd>
-	</dl>
 	<br>
 
 		
 	<h1>Professional Experience</h1>
 	<h2>NOV</h2>
-  <p><strong>Senior Data Engineer, Remote, Houston, TX, 01/2022-Present</strong></p>
+  <p><strong>Senior Data Scientist, Remote, Houston, TX, 01/2023-Present</strong></p>
+	<ul>
+  <li>Build & deploy machine learning, computer vision and statistical models and apps.</li>
+	</ul>
+  <br>
+  
+  <p><strong>Senior Data Engineer, Remote, Houston, TX, 01/2022-12/2022</strong></p>
 	<ul>
 	<li>Build data pipelines, data warehouse, pioneer in Extract-Transform-Load (ETL) data with Azure platforms for ReedHycalog Software team.</li>
-  <li>Creator of Phosphor analytics apps and dashboards used for gaining business insights and product design analytics.</li>
-  <li>Build and deploy machine learning, computer vision and statistical models for design evaluation, simulation and prediction.</li>
+  <li>Creator of Phosphor & Xenon analytics apps and dashboards used for gaining business insights and product design analytics.</li>
+  <li>Build machine learning and statistical models for design evaluation, simulation and prediction.</li>
 	</ul>
     
   <h2>Captain.tv</h2>
